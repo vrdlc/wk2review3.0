@@ -11,121 +11,119 @@
   </head>
   <body>
 
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Off the Beaten Path</h1>
+
+        <h3>Answer a few questions to help determine what out of the way place you would most like to visit.</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>Where do you want to go?</h3>
+      <p>Do you like to travel, but are bored by more popular travel destinations? Tired of elbowing your way through the crowd to see that Mona Lisa? Stressed about the time you waste waiting in line to get to the observation deck of the world's tallest buildings? Then I have a few recommendations for you!</p>
+      <p>Answer the following questions to help narrow down locations you might like to visit. </p>
+    </div>
+
+
+    <div class="container">
+
+    <form id='test'>
+      <div id="q1">
+        <p>What kind of climate do you like? <strong>Hot</strong> or <strong>Cold</strong>?</p>
+        <input type="radio" class="climate" name="question1" onclick="(1)" value="hot">Hot</input>
+        <input type="radio" class="climate" name="question1" onclick="(11)" value="cold">Cold</input>
+      </div>
+
+      <div id="q2">
+        <p>Do you like to be in danger? <strong>Yes</strong> or <strong>No</strong>?</p>
+        <input type="radio" class="danger" name="question2" onclick="(1)"  value="yes">Yes</input>
+        <input type="radio" class="danger" name="question2" onclick="(1)" value="no">No</input>
+      </div>
+
+
+      <div id="q3">
+        <p>If you like to be in danger, how much danger do you like to be in ? <strong>Maimed</strong> or <strong>Dead</strong>?</p>
+          <input type="radio" class="bodystate" name="question3" onclick="(1)"  value="maimed">Maimed</input>
+          <input type="radio" class="bodystate" name="question3" onclick="(2)" value="dead">Dead</input>
+          <input type="radio" class="bodystate" name="question3" onclick="(0)" value="safe">I said I didn't like to be in danger.</input>
+      </div>
+
+      <button id="submitquestions" type="submit" class="btn btn-info">Get your vacation!</button>
+    </form>
+</div>
+
+
+
+    <div class="container">
+
+      <div class="container-answer" value="2" id="answerHotSafe">
+        <div class="jumbotron" >
+          <div>
+            <h3>You should go to...</h3>
+            <img src="img/island.jpg" alt="" />
+            <h4>the Hawaiian Islands!</h4>
+            <p>Honolulu is a great tourist destination, but it's pretty easy to get to. Try another island for a different experience, or just drive around to the northern side of Oahu.
+          </div>
+        </div>
+      </div>
+
+      <div class="container-answer" value="4">
+        <div class="jumbotron" id="answerDeadHot">
+          <div>
+            <h3>You should go </h3>
+            <img src="img/volcano.jpeg" alt="" />
+            <h4>rappelling into a volcano!!</h4>
+            <p>It's not something everyone can do. In fact, it's likely only <a href="http://khon2.com/2014/09/09/stunning-views-as-daredevils-rappel-into-a-volcano/">George Kourounis and Sam Cossman</a> have! Rappell down into the crater wearing a heat resistant suit and stand next to the boiling lava for as long as you can!</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-answer" value="3">
+        <div class="jumbotron" id="answerMaimedHot">
+          <div>
+            <h3>You should go to...</h3>
+            <img src="img/ilha.jpg" alt="Ilha da queimada"/>
+            <h4>Ilha da Queimada Grande(aka "Snake Island")!</h4>
+            <p>Ilha da Queimada Grande is an island off the coast of Brazil. Visits are strictly controlled by the Brazillian government, as the island has an incredibly high concentraion of venemous snakes! The island itself is even shaped like a snake!<p/>
+            <p>Some experts claim that there is one snake for every square meter in some spots, and a single bite can cause kidney failure, necrosis, brain hemorrhaging, and intestinal bleeding.</p>
+            <p>It's not fun, but it sure is hot and dangerous! You can learn more about the island on <a href="https://en.wikipedia.org/wiki/Ilha_da_Queimada_Grande"> Wikipedia</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="container-answer" value="14">
+        <div class="jumbotron" id="answerDeadCold">
+          <div>
+            <h3>You should go...</h3>
+            <img src="img/mountain.jpeg" alt="" />
+            <h4>climb Annapurna!</h4> <p>It may not be the tallest mountain in the world, but it's currently the most dangerous, with only a 62% survival rate! Only 157 people have summitted it and 60 people have died! You can learn more at <a href="https://en.wikipedia.org/wiki/Annapurna_I_Main">Wikipedia</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-answer" value="13">
+        <div class="jumbotron" id="answerMaimedCold">
+          <div>
+            <h3>You should go ...</h3>
+            <img src="img/ski.jpeg" alt="" />
+            <h4>ski to the South Pole!</h4> <p>It's an incredibly strenuous journey across the world's largest desert. It's cold and you probably won't die, but you might lose a toe! Do find someone to water your plants however, because you'll be gone for at least two months! Figure out who to talk to at <a href="http://www.adventureconsultants.com/adventure/SouthPoleAlltheWay/">Adventure Consultants!</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-answer" value="12">
+        <div class="jumbotron" id="answerLotCold">
+          <div>
+            <h3>You should stay at...</h3>
+            <img src="img/icehotel.jpg" alt="" />
+            <h4>an ice hotel!</h4>
+            <p>There are many to choose from. You can head north to Alaska or Quebec, or you can cross the ocean and stay in one in Japan, Finland, Norway, Romania, or Sweden! Just make sure you call ahead so your room isn't melting or in the process of being rebuilt! More information can be found <a href="http://www.icehotel.com/">here</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
-
-
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Off the Beaten Path</h1>
-
-      <h3>Answer a few questions to help determine what out of the way place you would most like to visit.</h3>
-    </div>
-  </div>
-
-  <div class="container">
-    <h3>Where do you want to go?</h3>
-    <p>Do you like to travel, but are bored by more popular travel destinations? Tired of elbowing your way through the crowd to see that Mona Lisa? Stressed about the time you waste waiting in line to get to the observation deck of the world's tallest buildings? Then I have a few recommendations for you!</p>
-    <p>Answer the following questions to help narrow down locations you might like to visit. </p>
-  </div>
-
-
-  <div class="container">
-    <div class="btn-group" data-toggle="buttons" id="questions">
-
-      <form id='questions'>
-        <div id="q1">
-          <p>What kind of climate do you like? <strong>Hot</strong> or <strong>Cold</strong>?</p>
-          <label><input type="radio" class="climate" name="question1" onclick="(1)" value="hot">Hot</label><br>
-          <label><input type="radio" class="climate" name="question1" onclick="(11)" value="cold">Cold</label><br>
-        </div>
-
-
-
-        <div id="q2">
-          <p>Do you like to be in danger? <strong>Yes</strong> or <strong>No</strong>?</p>
-          <label><input type="radio" class="danger" name="question2" onclick="(1)"  value="yes">Yes</label><br>
-          <label><input type="radio" class="danger" name="question2" onclick="(1)" value="no">No</label><br>
-        </div>
-
-
-        <div id="q3">
-          <p>If you like to be in danger, how much danger do you like to be in ? <strong>Maimed</strong> or <strong>Dead</strong>?</p>
-            <input type="radio" class="bodystate" name="question3" onclick="(1)"  value="maimed">Maimed<br>
-            <input type="radio" class="bodystate" name="question3" onclick="(2)" value="dead">Dead<br>
-            <input type="radio" class="bodystate" name="question3" onclick="(0)" value="safe">I said I didn't like to be in danger.<br>
-        </div>
-      </form>
-      <button id="submitquestions" type="button" class="btn btn-info">Get your vacation!</button>
-    </div>
-  </div>
-
-<div class="container">
-
-  <div class="container-answer" value="2" id="answerHotSafe">
-    <div class="jumbotron" >
-      <div>
-        <h3>You should go to...</h3>
-        <img src="img/island.jpg" alt="" />
-        <h4>the Hawaiian Islands!</h4>
-        <p>Honolulu is a great tourist destination, but it's pretty easy to get to. Try another island for a different experience, or just drive around to the northern side of Oahu.
-      </div>
-    </div>
-  </div>
-
-  <div class="container-answer" value="4">
-    <div class="jumbotron" id="answerDeadHot">
-      <div>
-        <h3>You should go </h3>
-        <img src="img/volcano.jpeg" alt="" />
-        <h4>rappelling into a volcano!!</h4>
-        <p>It's not something everyone can do. In fact, it's likely only <a href="http://khon2.com/2014/09/09/stunning-views-as-daredevils-rappel-into-a-volcano/">George Kourounis and Sam Cossman</a> have! Rappell down into the crater wearing a heat resistant suit and stand next to the boiling lava for as long as you can!</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-answer" value="3">
-    <div class="jumbotron" id="answerMaimedHot">
-      <div>
-        <h3>You should go to...</h3>
-        <img src="img/ilha.jpg" alt="Ilha da queimada"/>
-        <h4>Ilha da Queimada Grande(aka "Snake Island")!</h4>
-        <p>Ilha da Queimada Grande is an island off the coast of Brazil. Visits are strictly controlled by the Brazillian government, as the island has an incredibly high concentraion of venemous snakes! The island itself is even shaped like a snake!<p/>
-        <p>Some experts claim that there is one snake for every square meter in some spots, and a single bite can cause kidney failure, necrosis, brain hemorrhaging, and intestinal bleeding.</p>
-        <p>It's not fun, but it sure is hot and dangerous! You can learn more about the island on <a href="https://en.wikipedia.org/wiki/Ilha_da_Queimada_Grande"> Wikipedia</a>.
-      </div>
-    </div>
-  </div>
-
-  <div class="container-answer" value="14">
-    <div class="jumbotron" id="answerDeadCold">
-      <div>
-        <h3>You should go...</h3>
-        <img src="img/mountain.jpeg" alt="" />
-        <h4>climb Annapurna!</h4> <p>It may not be the tallest mountain in the world, but it's currently the most dangerous, with only a 62% survival rate! Only 157 people have summitted it and 60 people have died! You can learn more at <a href="https://en.wikipedia.org/wiki/Annapurna_I_Main">Wikipedia</a>.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-answer" value="13">
-    <div class="jumbotron" id="answerMaimedCold">
-      <div>
-        <h3>You should go ...</h3>
-        <img src="img/ski.jpeg" alt="" />
-        <h4>ski to the South Pole!</h4> <p>It's an incredibly strenuous journey across the world's largest desert. It's cold and you probably won't die, but you might lose a toe! Do find someone to water your plants however, because you'll be gone for at least two months! Figure out who to talk to at <a href="http://www.adventureconsultants.com/adventure/SouthPoleAlltheWay/">Adventure Consultants!</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-answer" value="12">
-    <div class="jumbotron" id="answerLotCold">
-      <div>
-        <h3>You should stay at...</h3>
-        <img src="img/icehotel.jpg" alt="" />
-        <h4>an ice hotel!</h4>
-        <p>There are many to choose from. You can head north to Alaska or Quebec, or you can cross the ocean and stay in one in Japan, Finland, Norway, Romania, or Sweden! Just make sure you call ahead so your room isn't melting or in the process of being rebuilt! More information can be found <a href="http://www.icehotel.com/">here</a>.</p>
-      </div>
-    </div>
-  </div>
-</div>
